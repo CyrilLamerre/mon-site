@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Festin de Confettis</title>
+  <!-- Import de la police Google "Lobster" pour un style élégant -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <style>
+    /* Fond en dégradé */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Lobster', cursive;
+      background: linear-gradient(135deg, #f6d365, #fda085);
+      overflow: hidden;
+    }
+    
+    /* Container pour le texte */
+    .text-container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      margin-top: 20vh;
+      color: #fff;
+    }
+    
+    .text-container h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    
+    .text-container p {
+      font-size: 1.5em;
+    }
+    
+    /* Style pour les confettis */
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      opacity: 0.8;
+      animation: confettiFall 5s linear infinite;
+    }
+    
+    /* Animation de chute de confettis */
+    @keyframes confettiFall {
+      0% {
+        transform: translateY(-100vh) rotate(0deg);
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+      }
+    }
+    
+    /* Positions et variations pour chaque confetti */
+    .confetti:nth-child(1) { left: 10%; animation-duration: 3s; background-color: #ffeb3b; }
+    .confetti:nth-child(2) { left: 20%; animation-duration: 4s; background-color: #03a9f4; }
+    .confetti:nth-child(3) { left: 30%; animation-duration: 3.5s; background-color: #e91e63; }
+    .confetti:nth-child(4) { left: 40%; animation-duration: 5s; background-color: #ff5722; }
+    .confetti:nth-child(5) { left: 50%; animation-duration: 4.5s; background-color: #8bc34a; }
+    .confetti:nth-child(6) { left: 60%; animation-duration: 3.2s; background-color: #ffc107; }
+    .confetti:nth-child(7) { left: 70%; animation-duration: 4.8s; background-color: #4caf50; }
+    .confetti:nth-child(8) { left: 80%; animation-duration: 3.7s; background-color: #00bcd4; }
+    .confetti:nth-child(9) { left: 90%; animation-duration: 5.2s; background-color: #ff9800; }
+    .confetti:nth-child(10) { left: 95%; animation-duration: 4s; background-color: #9c27b0; }
+  </style>
+</head>
+<body>
+  <div class="text-container">
+    <h1>Bienvenue au Festin de Confettis !</h1>
+    <p>Un monde de couleurs et de joie vous attend.</p>
+  </div>
+  
+  <!-- Les éléments confettis -->
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+</body>
+</html>
 
